@@ -1,0 +1,324 @@
+{
+  "version": "6.0",
+  "nxVersion": "20.1.0",
+  "pathMappings": {
+    "@your-project/component-utils": [
+      "libs/ui/utils/src/index.ts"
+    ],
+    "@your-project/component-utils/*": [
+      "libs/ui/utils/src/*"
+    ],
+    "@your-project/components": [
+      "libs/ui/src/index.ts"
+    ],
+    "@your-project/components/*": [
+      "libs/ui/src/*"
+    ]
+  },
+  "nxJsonPlugins": [
+    {
+      "name": "@nx/next/plugin",
+      "options": {
+        "startTargetName": "start",
+        "buildTargetName": "build",
+        "devTargetName": "dev",
+        "serveStaticTargetName": "serve-static"
+      }
+    },
+    {
+      "name": "@nx/jest/plugin",
+      "options": {
+        "targetName": "test"
+      }
+    },
+    {
+      "name": "@nx/eslint/plugin",
+      "options": {
+        "targetName": "lint"
+      }
+    },
+    {
+      "name": "@nx/webpack/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview"
+      }
+    },
+    {
+      "name": "@nx/vite/plugin",
+      "options": {
+        "buildTargetName": "build",
+        "testTargetName": "test",
+        "serveTargetName": "serve",
+        "previewTargetName": "preview",
+        "serveStaticTargetName": "serve-static",
+        "typecheckTargetName": "typecheck"
+      }
+    }
+  ],
+  "fileMap": {
+    "nonProjectFiles": [
+      {
+        "file": "package.json",
+        "hash": "6957604901890338564"
+      },
+      {
+        "file": "README.md",
+        "hash": "5908307616024307340"
+      },
+      {
+        "file": "tsconfig.json",
+        "hash": "3046591987384101516"
+      },
+      {
+        "file": "package-lock.json",
+        "hash": "13473651619139483337"
+      },
+      {
+        "file": "jest.preset.js",
+        "hash": "9430166341120122740"
+      },
+      {
+        "file": "tsconfig.base.json",
+        "hash": "10669500456775984979"
+      },
+      {
+        "file": "nx.json",
+        "hash": "14552981952827200803"
+      },
+      {
+        "file": ".gitignore",
+        "hash": "15580728915408433654"
+      },
+      {
+        "file": "jest.config.ts",
+        "hash": "3494843969422251966"
+      },
+      {
+        "file": "components.json",
+        "hash": "1659817695711712116"
+      },
+      {
+        "file": "eslint.config.js",
+        "hash": "2478217381773231556"
+      },
+      {
+        "file": "vitest.workspace.ts",
+        "hash": "14023491222425291751"
+      }
+    ],
+    "projectFileMap": {
+      "utils": [
+        {
+          "file": "libs/ui/utils/.swcrc",
+          "hash": "16777374493166073853"
+        },
+        {
+          "file": "libs/ui/utils/README.md",
+          "hash": "3816604565008484386"
+        },
+        {
+          "file": "libs/ui/utils/eslint.config.js",
+          "hash": "2368977605256145413",
+          "deps": [
+            "npm:jsonc-eslint-parser"
+          ]
+        },
+        {
+          "file": "libs/ui/utils/jest.config.ts",
+          "hash": "17909355593229491413"
+        },
+        {
+          "file": "libs/ui/utils/package.json",
+          "hash": "3148637644662465742",
+          "deps": [
+            "npm:@swc/helpers"
+          ]
+        },
+        {
+          "file": "libs/ui/utils/project.json",
+          "hash": "5156890187152549256"
+        },
+        {
+          "file": "libs/ui/utils/src/global.css",
+          "hash": "291024361394925992"
+        },
+        {
+          "file": "libs/ui/utils/src/index.ts",
+          "hash": "602383509461752784"
+        },
+        {
+          "file": "libs/ui/utils/src/lib/cn.ts",
+          "hash": "12111293506813543899",
+          "deps": [
+            "npm:clsx",
+            "npm:tailwind-merge"
+          ]
+        },
+        {
+          "file": "libs/ui/utils/src/tailwind.config.js",
+          "hash": "13090734457927965885",
+          "deps": [
+            "npm:@nx/react"
+          ]
+        },
+        {
+          "file": "libs/ui/utils/tsconfig.json",
+          "hash": "12405491650244951386"
+        },
+        {
+          "file": "libs/ui/utils/tsconfig.lib.json",
+          "hash": "5554291030212586824"
+        },
+        {
+          "file": "libs/ui/utils/tsconfig.spec.json",
+          "hash": "9110660443763673899"
+        }
+      ],
+      "frontend": [
+        {
+          "file": "apps/frontend/eslint.config.js",
+          "hash": "13486434577076786399",
+          "deps": [
+            "npm:@eslint/eslintrc",
+            "npm:@eslint/js",
+            "npm:@eslint/compat",
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "apps/frontend/index.d.ts",
+          "hash": "5498222895072842432"
+        },
+        {
+          "file": "apps/frontend/jest.config.ts",
+          "hash": "15728202706449313553"
+        },
+        {
+          "file": "apps/frontend/next-env.d.ts",
+          "hash": "13904763933831424769"
+        },
+        {
+          "file": "apps/frontend/next.config.js",
+          "hash": "17252635002163063865",
+          "deps": [
+            "npm:@nx/next"
+          ]
+        },
+        {
+          "file": "apps/frontend/postcss.config.js",
+          "hash": "2759402739052110475"
+        },
+        {
+          "file": "apps/frontend/project.json",
+          "hash": "16374003599071954628"
+        },
+        {
+          "file": "apps/frontend/specs/index.spec.tsx",
+          "hash": "2873936096691223229",
+          "deps": [
+            "npm:react",
+            "npm:@testing-library/react"
+          ]
+        },
+        {
+          "file": "apps/frontend/src/app/api/hello/route.ts",
+          "hash": "495073956729887886"
+        },
+        {
+          "file": "apps/frontend/src/app/global.css",
+          "hash": "17247504839446362977"
+        },
+        {
+          "file": "apps/frontend/src/app/layout.tsx",
+          "hash": "13415515203133792280"
+        },
+        {
+          "file": "apps/frontend/src/app/page.tsx",
+          "hash": "15144810935966121414",
+          "deps": [
+            "ui"
+          ]
+        },
+        {
+          "file": "apps/frontend/tailwind.config.js",
+          "hash": "8302249987226744229",
+          "deps": [
+            "utils"
+          ]
+        },
+        {
+          "file": "apps/frontend/tsconfig.json",
+          "hash": "5983257060953454576"
+        },
+        {
+          "file": "apps/frontend/tsconfig.spec.json",
+          "hash": "6922413205408300107"
+        }
+      ],
+      "ui": [
+        {
+          "file": "libs/ui/README.md",
+          "hash": "12971312433074001572"
+        },
+        {
+          "file": "libs/ui/eslint.config.js",
+          "hash": "18206053935892145363",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "libs/ui/project.json",
+          "hash": "12196302964876651695"
+        },
+        {
+          "file": "libs/ui/src/components/ui/button.tsx",
+          "hash": "8374069430683922607",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-slot",
+            "npm:class-variance-authority",
+            "utils"
+          ]
+        },
+        {
+          "file": "libs/ui/src/components/ui/dialog.tsx",
+          "hash": "9130280040405043084",
+          "deps": [
+            "npm:react",
+            "npm:@radix-ui/react-dialog",
+            "utils",
+            "npm:@radix-ui/react-icons"
+          ]
+        },
+        {
+          "file": "libs/ui/src/index.ts",
+          "hash": "8836991070581833572"
+        },
+        {
+          "file": "libs/ui/tsconfig.json",
+          "hash": "12937361759397702261"
+        },
+        {
+          "file": "libs/ui/tsconfig.lib.json",
+          "hash": "13795438740252393757"
+        },
+        {
+          "file": "libs/ui/tsconfig.spec.json",
+          "hash": "16829233919054324066"
+        },
+        {
+          "file": "libs/ui/vite.config.ts",
+          "hash": "4775943947019976978",
+          "deps": [
+            "npm:vite",
+            "npm:@vitejs/plugin-react-swc",
+            "npm:@nx/vite"
+          ]
+        }
+      ]
+    }
+  }
+}
